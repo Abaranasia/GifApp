@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas del componente GifGridItem Debe mostrar el componente correctamente 1`] = `
+<figure
+  className="foto"
+>
+  <a
+    href="https://locahost/foto.jpg"
+    rel="noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="titulo"
+      src="https://locahost/foto.jpg"
+    />
+  </a>
+  <figcaption>
+    titulo
+  </figcaption>
+</figure>
+`;
