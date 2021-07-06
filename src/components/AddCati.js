@@ -3,6 +3,13 @@ import PropTypes from 'prop-types';
 
 
 export default function AddCati( {setcategorias}) {
+/*** 
+ * 
+ * Componente que pinta un formulario para leer del usuario un tema para buscar
+ * Recibe como argumento la función setcategorias que permitirá añadir la categoria buscada al estado
+ *   
+ * ***/ 
+
 
     const [inputVal, setInputVal] = useState('')
 
@@ -13,6 +20,8 @@ export default function AddCati( {setcategorias}) {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        console.log ('handleSubmit', inputVal );
+
         if (inputVal.trim().length>2) {
             setcategorias(cats =>[inputVal, ...cats]); // EL orden importa
             setInputVal('')
@@ -22,6 +31,7 @@ export default function AddCati( {setcategorias}) {
 
     return (
         <form onSubmit={handleSubmit}>
+            <p> {inputVal}</p>
             <input
             type="text"
             placeholder="nueva categoría"

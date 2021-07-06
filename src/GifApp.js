@@ -5,16 +5,22 @@ import GifGrid from './components/GifGrid';
 import Header from './components/Header';
 
 export const GifApp = () => {
+/*** 
+ * 
+ * Componente principal que presenta tres componentes distintos:
+ * <Header /> --> Estético con la cabecera de la app
+ * <Addcati /> --> Formulario para búsqueda de temas
+ * <GifGrid /> --> Componente que lista los resultados de la búsqueda pedida desde Addcati
+ *  
+ * En este componente reside el estado de categorías, el cual se va poblando desde el formulario y cuyo valor 
+ * se envía a GifGrid para realizar el fetch a la API y pintar los resultados
+ * 
+ * ***/ 
 
-    //const categorias = ['tea', 'cat', 'dance']
 
     const [categorias, setcategorias] = useState(['cats']);
 
-    /*
-    const addCati = () => {
-        setcategorias([...categorias, 'nueva']);
-    }
-    */
+
    
     return (
         <div>
