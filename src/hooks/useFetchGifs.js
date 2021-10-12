@@ -1,7 +1,9 @@
 import {useState, useEffect} from 'react'
-import { getGifs } from '../GetGifs';
+import { getGifs } from '../components/GetGifs';
 
 export default function useFetchGifs(categoria) {
+//export const useFetchGifs = ( category ) => // esta declaración implica la llamada con { }
+
 /*** 
  * 
  * Hook que gestiona la descarga de nuevas imágenes de una categoría desde la api con getGifs

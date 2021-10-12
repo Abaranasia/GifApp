@@ -1,6 +1,6 @@
 
 
-export const  getGifs = async (categoria) => {
+export const getGifs = async (categoria) => {
 /*** 
  * 
  * Componente que descarga desde la API las imágenes correspondientes a una categoría 

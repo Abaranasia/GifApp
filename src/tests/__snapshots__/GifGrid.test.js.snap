@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas GifGrid Debe coincidir con el snapshot 1`] = `
+<Fragment>
+  <h2>
+    Gantz
+  </h2>
+  <p>
+    Loading...
+  </p>
+  <div
+    className="resultados animate__animated animate__backInDown"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas GifGrid Debe mostrar items cuando recibimos una respuesta de GetGifs 1`] = `
+<Fragment>
+  <h2>
+    Gantz
+  </h2>
+  <div
+    className="resultados animate__animated animate__backInDown"
+  >
+    <GifGridItem
+      0={
+        Object {
+          "id": 1,
+          "title": "algo",
+          "url": "http://localhost/foto.jpg",
+        }
+      }
+    />
+  </div>
+</Fragment>
+`;

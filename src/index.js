@@ -10,7 +10,7 @@ import { GifApp } from './GifApp';
 
 ReactDOM.render(
   //<CovidInfo />,
-  <GifApp/>,
+  <GifApp/>, // enviamos la categoría gatos para empezar
   document.getElementById('root')
 );
 

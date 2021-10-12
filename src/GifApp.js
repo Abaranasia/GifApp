@@ -4,7 +4,7 @@ import AddCati from './components/AddCati';
 import GifGrid from './components/GifGrid';
 import Header from './components/Header';
 
-export const GifApp = () => {
+export const GifApp = ({ defaultCategories= ['cats'] }) => {
 /*** 
  * 
  * Componente principal que presenta tres componentes distintos:
@@ -14,14 +14,13 @@ export const GifApp = () => {
  *  
  * En este componente reside el estado de categorías, el cual se va poblando desde el formulario y cuyo valor 
  * se envía a GifGrid para realizar el fetch a la API y pintar los resultados
+ * POr defecto no recibe categorias, pero desde el comp padre sí se está enviando una, "cats"
  * 
  * ***/ 
 
 
-    const [categorias, setcategorias] = useState(['cats']);
-
-
-   
+    const [categorias, setcategorias] = useState(defaultCategories);
+   console.log(defaultCategories)
     return (
         <div>
             <Header/>
